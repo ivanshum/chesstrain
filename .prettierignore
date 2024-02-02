@@ -1,0 +1,9 @@
+.yarn/*
+.husky/*
+env.d.ts
+README.md
+src/**/*.tsx
+src/**/*.jsx
+src/**/*.ts
+src/**/*.js
+.pnp*

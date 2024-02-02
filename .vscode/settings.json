@@ -11,8 +11,11 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
-  "git.enableCommitSigning":true,
-  "eslint.validate": ["javascript"]
+  "git.enableCommitSigning": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
