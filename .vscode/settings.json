@@ -1,0 +1,18 @@
+{
+  "githubIssues.issueBranchTitle": "${user}/${sanitizedIssueTitle}#${issueNumber}",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+  },
+  "git.enableCommitSigning":true,
+  "eslint.validate": ["javascript"]
+}
