@@ -5,10 +5,7 @@
     "prettier",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": [
-    "eslint-plugin-next-on-pages",
-    "eslint-plugin-import"
-  ],
+  "plugins": ["eslint-plugin-next-on-pages", "eslint-plugin-import"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -20,7 +17,7 @@
     "tailwindcss/no-arbitrary-value": "off",
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/no-contradicting-classname": "error",
-    "no-console":"error",
-    "import/newline-after-import":["error", { "count": 1         }]
+    "no-console": "error",
+    "import/newline-after-import": ["error", { "count": 1 }]
   }
 }
