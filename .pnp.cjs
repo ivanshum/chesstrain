@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:6.20.0"],\
           ["@typescript-eslint/parser", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:6.20.0"],\
           ["autoprefixer", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:10.4.17"],\
+          ["chess.js", "npm:1.0.0-beta.7"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:9.1.0"],\
@@ -48,6 +49,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.4"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:18.2.0"],\
+          ["stockfish", "npm:16.0.0"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
           ["vercel", "npm:33.4.1"],\
@@ -2225,6 +2227,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["chess.js", [\
+      ["npm:1.0.0-beta.7", {\
+        "packageLocation": "../../.yarn/berry/cache/chess.js-npm-1.0.0-beta.7-227018e7c6-10c0.zip/node_modules/chess.js/",\
+        "packageDependencies": [\
+          ["chess.js", "npm:1.0.0-beta.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["chesstrain", [\
       ["workspace:.", {\
         "packageLocation": "./",\
@@ -2238,6 +2249,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:6.20.0"],\
           ["@typescript-eslint/parser", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:6.20.0"],\
           ["autoprefixer", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:10.4.17"],\
+          ["chess.js", "npm:1.0.0-beta.7"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:9.1.0"],\
@@ -2252,6 +2264,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.4"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:18.2.0"],\
+          ["stockfish", "npm:16.0.0"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
           ["vercel", "npm:33.4.1"],\
@@ -7221,6 +7234,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/statuses-npm-1.5.0-f88f91b2e9-10c0.zip/node_modules/statuses/",\
         "packageDependencies": [\
           ["statuses", "npm:1.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["stockfish", [\
+      ["npm:16.0.0", {\
+        "packageLocation": "./.yarn/unplugged/stockfish-npm-16.0.0-8f2ef76e4e/node_modules/stockfish/",\
+        "packageDependencies": [\
+          ["stockfish", "npm:16.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\

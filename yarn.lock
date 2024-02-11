@@ -1748,6 +1748,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chess.js@npm:^1.0.0-beta.7":
+  version: 1.0.0-beta.7
+  resolution: "chess.js@npm:1.0.0-beta.7"
+  checksum: 10c0/6b090c8ae8f933cc2768afcf6da14472ff7d154f35032f2c3f5cc40032fbbf8a04ab659a42c26ff9fc14599856011d4c90db6c64628ba067e47ac8dc30127be7
+  languageName: node
+  linkType: hard
+
 "chesstrain@workspace:.":
   version: 0.0.0-use.local
   resolution: "chesstrain@workspace:."
@@ -1760,6 +1767,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
     "@typescript-eslint/parser": "npm:^6.0.0"
     autoprefixer: "npm:^10.0.1"
+    chess.js: "npm:^1.0.0-beta.7"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -1774,6 +1782,7 @@ __metadata:
     prettier: "npm:^3.2.4"
     react: "npm:^18"
     react-dom: "npm:^18"
+    stockfish: "npm:^16.0.0"
     tailwindcss: "npm:^3.3.0"
     typescript: "npm:^5"
     vercel: "npm:^33.4.1"
@@ -6210,6 +6219,15 @@ __metadata:
   version: 1.5.0
   resolution: "statuses@npm:1.5.0"
   checksum: 10c0/e433900956357b3efd79b1c547da4d291799ac836960c016d10a98f6a810b1b5c0dcc13b5a7aa609a58239b5190e1ea176ad9221c2157d2fd1c747393e6b2940
+  languageName: node
+  linkType: hard
+
+"stockfish@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "stockfish@npm:16.0.0"
+  bin:
+    stockfishjs: stockfishjs
+  checksum: 10c0/968d896a2e968d664daa47c6000fa5da36f56d19baeca28ddfc9a21cba5d9e4d6800e175117d0ad5b69c07e039279ad97a74ad5511f572d0717b1b7b041b5b82
   languageName: node
   linkType: hard
 
