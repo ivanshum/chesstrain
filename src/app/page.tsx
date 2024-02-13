@@ -1,8 +1,11 @@
+/* 'use client' */
+import Board from "@/app/components/Board";
 
-export default function Home() {
+export default function Index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Hello World</div>
-    </main>
+    <>
+      <p>Let&apos;s play a chess</p>
+      <Board/>
+    </>
   );
 }
