@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@cloudflare/next-on-pages", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:1.8.6"],\
           ["@cloudflare/workers-types", "npm:4.20240129.0"],\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.51"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -44,6 +45,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-tailwindcss", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:3.14.1"],\
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.2.1"],\
+          ["lodash", "npm:4.17.21"],\
           ["next", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:14.1.0"],\
           ["postcss", "npm:8.4.33"],\
           ["prettier", "npm:3.2.4"],\
@@ -1041,6 +1043,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/@types-json5-npm-0.0.29-f63a7916bd-10c0.zip/node_modules/@types/json5/",\
         "packageDependencies": [\
           ["@types/json5", "npm:0.0.29"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/lodash", [\
+      ["npm:4.14.202", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-lodash-npm-4.14.202-76de3e302b-10c0.zip/node_modules/@types/lodash/",\
+        "packageDependencies": [\
+          ["@types/lodash", "npm:4.14.202"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2270,6 +2281,7 @@ const RAW_RUNTIME_STATE =
           ["chesstrain", "workspace:."],\
           ["@cloudflare/next-on-pages", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:1.8.6"],\
           ["@cloudflare/workers-types", "npm:4.20240129.0"],\
+          ["@types/lodash", "npm:4.14.202"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.51"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -2286,6 +2298,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-tailwindcss", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:3.14.1"],\
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.2.1"],\
+          ["lodash", "npm:4.17.21"],\
           ["next", "virtual:ec6504e55363f945366ea39c9ca5a00ceaf01afa541094b62dedf48958fb9e7f170675f68113747b4254a01ae2564f3b3b103b2d482ba694fa2652c503a97244#npm:14.1.0"],\
           ["postcss", "npm:8.4.33"],\
           ["prettier", "npm:3.2.4"],\
@@ -5354,6 +5367,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["locate-path", "npm:6.0.0"],\
           ["p-locate", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash", [\
+      ["npm:4.17.21", {\
+        "packageLocation": "../../.yarn/berry/cache/lodash-npm-4.17.21-6382451519-10c0.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.17.21"]\
         ],\
         "linkType": "HARD"\
       }]\
