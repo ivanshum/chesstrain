@@ -7,6 +7,7 @@ import { Square } from 'react-chessboard/dist/chessboard/types';
 
 export default function Board() {
   const realobj = new Chess();
+  //TODO: find a way to work with mutetable object
   const [game, setGame] = useState({ ...realobj, fen: realobj.fen() });
   function makeRandomMove() {}
 
