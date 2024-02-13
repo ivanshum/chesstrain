@@ -2,10 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:eslint-plugin-next-on-pages/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["eslint-plugin-next-on-pages", "eslint-plugin-import"],
+  "plugins": ["eslint-plugin-next-on-pages", "eslint-plugin-import", "eslint-plugin-prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
