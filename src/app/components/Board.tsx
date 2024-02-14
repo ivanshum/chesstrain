@@ -1,65 +1,38 @@
 /* eslint-disable no-console */
 'use client';
 import { Chess } from 'chess.js';
-import isEqual from 'lodash/isEqual';
-import { Reducer, useReducer } from 'react';
+import { useState } from 'react';
 import { Chessboard } from 'react-chessboard';
-import { Square } from 'react-chessboard/dist/chessboard/types';
+import { Piece, Square } from 'react-chessboard/dist/chessboard/types';
 
-interface MovePayload {
+const gameInstance = new Chess();
+
+interface Move {
   from: Square;
   to: Square;
   promotion?: string | undefined;
 }
-interface GameState {
-  game: Chess;
-  temp: Chess;
-  prevpayload: MovePayload | undefined;
-}
-// An interface for our actions
-interface Action {
-  type: 'MOVE';
-  payload?: MovePayload | undefined;
-}
-
-const gameUpdater: Reducer<GameState, Action> = (state: GameState, action: Action) => {
-  const { type, payload } = action;
-  if (!!isEqual(payload, state.prevpayload)) {
-    return state;
-  } else {
-    switch (type) {
-      case 'MOVE': {
-        try {
-          const move = state.game.move(payload as MovePayload);
-          state.temp = state.game;
-          console.log(move);
-        } catch {
-          state.game = state.temp;
-          state.prevpayload = payload;
-          console.log('errr');
-        }
-
-        return { ...state };
-      }
-      default: {
-        throw Error('Unknown action: ' + type);
-      }
-    }
-  }
-};
-
 export default function Board() {
-  //TODO: find a way to work with mutetable object
-  const [gameState, dispatch] = useReducer(gameUpdater, { game: new Chess(), temp: new Chess(), prevpayload: undefined });
-  function makeRandomMove() {}
+  const [gameFen, setGameFen] = useState(gameInstance.fen());
+  /* const [promotion, setPromotion] = useState(null);
+  function onPromotion() {} */
 
-  function onDrop(sourceSquare: Square, targetSquare: Square) {
-    const payload: MovePayload = {
+  function onDrop(sourceSquare: Square, targetSquare: Square, piece: Piece) {
+    console.log(piece);
+    const move: Move = {
       from: sourceSquare,
       to: targetSquare,
+      promotion: piece[1].toLowerCase() ?? 'q',
     };
-    dispatch({ payload: payload, type: 'MOVE' });
-    return true;
+    /* gameInstance.moves(move.from); */
+    try {
+      const moveresult = gameInstance.move(move);
+      setGameFen(gameInstance.fen());
+      console.log(moveresult);
+      return true;
+    } catch {
+      return false;
+    }
   }
   return (
     <>
@@ -67,8 +40,9 @@ export default function Board() {
         <Chessboard
           id="PlayVsRandom"
           showPromotionDialog={true}
-          position={gameState.game.fen()}
+          position={gameFen}
           onPieceDrop={onDrop}
+          /* onPromotionPieceSelect={onPromotion} */
           customBoardStyle={{
             borderRadius: '4px',
             boxShadow: '0 2px 10px rgba(0, 0, 0, 0.5)',
